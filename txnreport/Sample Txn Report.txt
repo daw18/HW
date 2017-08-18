@@ -1,0 +1,8 @@
+Date     Entity  USD Settled Amount - Outgoing USD Settled Amount - Incoming
+======== ======= ============================= ================================
+20160104 bar                              0.00                          1000.00 
+20160104 foo                              0.00                         10025.00 
+20160107 bar                          14899.50                             0.00 
+20160110 bar                          14237.30                             0.00 
+
+ END OF REPORT 
