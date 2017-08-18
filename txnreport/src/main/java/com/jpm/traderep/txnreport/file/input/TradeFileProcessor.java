@@ -23,7 +23,13 @@ import java.util.stream.Stream;
 import com.jpm.traderep.txnreport.entity.Position;
 import com.jpm.traderep.txnreport.entity.Transaction;
 import com.jpm.traderep.txnreport.file.validation.Validator;
-
+/**
+ * @author daw
+ * 
+ *         Aggregates trades by settlement date/entity, ready for reporting. 
+ *         
+ *
+ */
 public class TradeFileProcessor {
 
 	private Map<Integer, Map<String, Position>> txnDataMap = new TreeMap<>();
