@@ -35,20 +35,25 @@ public class DailyTradeFileProcessor {
 
 		Map<Integer, Map<String, Position>> rptDataMap = new TreeMap<>();
 
-		if (args.length == 1) {
-			fileName = args[0];
-		} else {
+		switch (args.length ) {
+		case 0: 
 			fileName = TXN_FILE_NAME;
-		}
-
-		if (args.length == 2) {
+			delimiter = ",";
+			break;
+		case 1: 
+			fileName = args[0];
+			delimiter = ",";
+			break;	
+		case 2:
 			fileName = args[0];
 			delimiter = args[1];
-		} else {
+			break;
+		default:
 			fileName = TXN_FILE_NAME;
 			delimiter = ",";
 		}
-
+			
+		System.out.println("File name: ");
 		TradeFileProcessor tfp = new TradeFileProcessor();
 		try {
 			rptDataMap = tfp.processTxnFile(fileName, delimiter);
