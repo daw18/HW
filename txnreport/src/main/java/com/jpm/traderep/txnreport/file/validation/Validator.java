@@ -1,4 +1,10 @@
 package com.jpm.traderep.txnreport.file.validation;
+/**
+ * @author daw
+ * 
+ *         Performs field level validation on data in trade file.
+ *
+ */
 
 import java.math.BigDecimal;
 import java.util.Date;
