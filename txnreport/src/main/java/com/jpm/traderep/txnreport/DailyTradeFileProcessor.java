@@ -15,6 +15,8 @@ import com.jpm.traderep.txnreport.file.input.TradeFileProcessor;
 /**
  * @author daw
  *
+ * Main class for processing and generating the transaction report.
+ * 
  */
 public class DailyTradeFileProcessor {
 
@@ -50,6 +52,7 @@ public class DailyTradeFileProcessor {
 		TradeFileProcessor tfp = new TradeFileProcessor();
 		try {
 			rptDataMap = tfp.processTxnFile(fileName, delimiter);
+			
 		} catch (IOException e) {
 			System.out.println("ERROR - Unable to process file: " + fileName);
 			e.printStackTrace();
